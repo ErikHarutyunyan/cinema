@@ -1,0 +1,64 @@
+{
+  "name": "vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+   "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint . --ext js,jsx --fix ",
+    "format": "prettier . --check --ignore-unknown",
+    "format:fix": "prettier . --write \"src/*.{js,jsx,ts,tsx,json}\"",
+    "component": "generate-react component",
+    "page": "generate-react component  --type=page",
+    "layout": "generate-react component  --type=layout",
+    "redux": "generate-react component  --type=redux"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 2 chrome version",
+      "last 2 firefox version",
+      "last 2 safari version"
+    ]
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.2.5",
+    "axios": "^1.7.2",
+    "date-fns": "^3.6.0",
+    "dayjs": "^1.11.11",
+    "jwt-decode": "^4.0.0",
+    "moment": "^2.30.1",
+    "react": "^18.2.0",
+    "react-big-calendar": "^1.12.2",
+    "react-dom": "^18.2.0",
+    "react-error-boundary": "^4.0.13",
+    "react-redux": "^9.1.2",
+    "react-router-dom": "^6.23.1",
+    "react-toastify": "^10.0.5",
+    "styled-components": "^6.1.11"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.3.0",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.2.22",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-config-prettier": "^9.1.0",
+    "generate-react-cli": "^8.4.6",
+    "prettier": "^3.2.5",
+    "vite": "^5.2.0",
+    "vite-plugin-svgr": "^4.2.0",
+    "vite-vitals": "^1.0.2"
+  }
+}
